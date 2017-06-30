@@ -26,18 +26,6 @@ export class AppComponent {
     'Cebu, Philippines'
   ];
 
-  rightTitles = [
-    'Work History',
-    'Education'
-  ];
-
-
-  educations = [
-    "Bachelor's of Science in Electrical Engineering: '08-'13",
-    `Master's of Engineering in Electrical Engineering: Control Systems Options
-    '15-present'`
-  ];
-
   experiences = {
 
     myWorks: [
