@@ -55,7 +55,7 @@ export class AppComponent {
     ],
     academia: [
       {
-        title : `Master's of Engineering in Electrical Engineering: Control
+        title : `Masters of Engineering in Electrical Engineering: Control
         Systems Options: '15-present`,
         section_1 : [
           {
