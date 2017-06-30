@@ -1,0 +1,46 @@
+#left-panel {
+  width: 300px;
+  position: fixed;
+  background: #ccc;
+  margin-top: 20px;
+  margin-left: 290px;
+  height: 610px;
+  background: #181a19;
+}
+
+#right-panel {
+  width: 490px;
+  position: absolute;
+  margin-left: 600px;
+  background: #db9b04;
+  margin-top: 20px;
+}
+
+.contact-details {
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.details {
+  text-align: justify;
+}
+
+ul li li {
+  font-size: 90%;
+  color: #ede8da;
+}
+
+ul {
+  color: white;
+}
+
+.exTitle {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-style: italic;
+}

@@ -1,0 +1,56 @@
+<!--The whole content below can be removed with the new code.-->
+<div id="left-panel">
+  <contact class="title" title="Erwin O. Cabatingan">
+    <div class="myPhoto">
+      <img src="../assets/panda.jpg" alt="cute">
+    </div>
+      <ul class="contact-details">
+        <li *ngFor="let detail of contactDetails">{{ detail }}</li>
+      </ul>
+  </contact>
+  <contact class="title" title="About Me">
+    <div class="aboutMe">
+      {{ aboutMe }}
+    </div>
+  </contact>
+</div>
+
+<div id="right-panel">
+  <div *ngFor="let text of experiences.myWorks">
+    <contact class="title" title="work history">
+      <p class="exTitle"> {{ text.title }} </p>
+      <ul class="section_1" *ngFor="let sec of text.section_1; let i=index">
+        <div *ngIf="i==0; then responsibilities"></div>
+        <ng-template #responsibilities>
+          <p class="subtitle">Responsibilities</p>
+        </ng-template>
+        <li> {{ sec }}</li>
+      </ul>
+    </contact>
+  </div>
+  <div *ngFor="let text of experiences.academia; let i=index">
+    <contact class="title" [title]="i == 0 ? 'education' : ''">
+      <p class="exTitle"> {{ text.title }} </p>
+      <ul class="section_1" *ngFor="let sec of text.section_1; let j=index">
+      <div *ngIf="j==0 && i==0; then projects"></div>
+      <div *ngIf="j==4 && i==0; then thesis"></div>
+      <div *ngIf="j==0 && i==1; then awards"></div>
+      <ng-template #projects>
+        <p class="subtitle">Projects</p>
+      </ng-template>
+      <ng-template #thesis>
+        <p class="subtitle">Thesis</p>
+      </ng-template>
+      <ng-template #awards>
+        <p class="subtitle">Awards</p>
+      </ng-template>
+        <li> {{ sec.title }}
+          <ul class="section_2">
+            <li *ngFor="let sec_2 of sec.details"> {{ sec_2 }}
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </contact>
+  </div>
+</div>

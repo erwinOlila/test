@@ -1,0 +1,33 @@
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 130%;
+  font-weight: bold;
+  color: white;
+}
+
+.about-me {
+  line-height: 13px;
+  text-align: justify;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 90%;
+}
+
+.lists {
+  margin-left: 20px;
+  margin-right: 50px;
+  text-align: justify;
+}
+
+.left-details {
+  color: #c4c1b9;
+  list-style: none;
+}
+
+.myPhoto {
+  text-align: center;
+  margin-top: 10px;
+}
