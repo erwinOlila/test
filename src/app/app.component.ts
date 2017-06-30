@@ -115,7 +115,7 @@ export class AppComponent {
         ]
       },
       {
-        title : `Bachelor's of Science in Electrical Engineering '08-'13`,
+        title : `Bachelors of Science in Electrical Engineering '08-'13`,
         section_1 : [
           {
             title : `Dean's Lister`,
